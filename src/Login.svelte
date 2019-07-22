@@ -1,5 +1,9 @@
 <script>
-import { createEventDispatcher } from "svelte";
+import { createEventDispatcher, onDestroy } from "svelte";
+import { navigate } from "svelte-routing"
+
+export let path
+console.log("path:", path)
 
 const dispatch = createEventDispatcher()
 
